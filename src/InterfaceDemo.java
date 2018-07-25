@@ -1,7 +1,7 @@
 interface TvRemote {
 	public void switchOff();
 
-	public void sqitchOn();
+	public void switchOn();
 
 	public void ChangeChannel();
 
@@ -17,7 +17,7 @@ class Sony implements TvRemote {
 	}
 
 	@Override
-	public void sqitchOn() {
+	public void switchOn() {
 		// TODO Auto-generated method stub
 		System.out.println("sony tv switching on");
 	}
@@ -50,7 +50,7 @@ class samsung implements TvRemote {
 	}
 
 	@Override
-	public void sqitchOn() {
+	public void switchOn() {
 		// TODO Auto-generated method stub
 		System.out.println("samsung tv switching on");
 	}
@@ -78,14 +78,14 @@ class samsung implements TvRemote {
 class InterfaceDemo {
 	public static void main(String[] args) {
 Sony s=new Sony();
-s.sqitchOn();
+s.switchOn();
 s.switchOff();
 s.ChangeChannel();
 s.increaseVolume();
 s.decreaseVolune();
 
 samsung sm=new samsung();
-sm.sqitchOn();
+sm.switchOn();
 sm.switchOff();
 sm.ChangeChannel();
 sm.increaseVolume();

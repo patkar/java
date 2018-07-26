@@ -4,7 +4,7 @@ public class ShuffelDemo {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		ArrayList al = new ArrayList();
+		ArrayList<Integer> al = new ArrayList<Integer>();
 		al.add(1);
 		al.add(2);
 		al.add(7);
@@ -28,7 +28,7 @@ public class ShuffelDemo {
 		System.out.println();
 		System.out.println("Binary Search:" + Collections.binarySearch(al, 5));
 		System.out.println();
-		ArrayList b = new ArrayList();
+		ArrayList<Integer> b = new ArrayList<Integer>();
 		b.add(11);
 		b.add(12);
 		b.add(13);
